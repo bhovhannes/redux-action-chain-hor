@@ -1,4 +1,4 @@
-import { Reducer, Action, AnyAction } from 'redux'
+import { Reducer, Action } from 'redux'
 
 const ActionType = 'HO_ACTION_CHAIN'
 
@@ -20,12 +20,10 @@ export default <A extends Action>(actions: A[] | A) => ({
   }
 })
 
-export const supportActionChain = <S, A extends Action = AnyAction>(reducer: Reducer<S>) => (
-  state: S,
-  action: A
-) => {
-  if (isActionChainAction(action)) {
-    return action.payload.actions.reduce(reducer, state)
-  }
-  return reducer(state, action)
-}
+export const supportActionChain = <S, T = any>(reducer: Reducer<S, Action<T>>) =>
+  ((state: S, action: Action<T | 'HO_ACTION_CHAIN'>) => {
+    if (isActionChainAction(action)) {
+      return action.payload.actions.reduce(reducer, state)
+    }
+    return reducer(state, action as Action<T>)
+  }) as Reducer<S, Action<T>>
