@@ -31,9 +31,6 @@
     "actions"
   ],
   "author": "Hovhannes Babayan <bhovhannes@gmail.com>",
-  "contributors": [
-    "Hovhannes Babayan <bhovhannes@gmail.com>"
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bhovhannes/redux-action-chain/issues"
