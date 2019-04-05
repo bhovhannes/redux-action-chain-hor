@@ -1,9 +1,9 @@
 {
-  "name": "redux-action-chain",
+  "name": "redux-action-chain-hor",
   "version": "1.0.0",
   "description": "Higher-order reducer which makes possible dispatching an array of actions at once.",
-  "main": "dist/redux-action-chain.cjs.js",
-  "module": "dist/redux-action-chain.esm.js",
+  "main": "dist/redux-action-chain-hor.cjs.js",
+  "module": "dist/redux-action-chain-hor.esm.js",
   "files": [
     "dist",
     "typings"
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhovhannes/redux-action-chain.git"
+    "url": "git+https://github.com/bhovhannes/redux-action-chain-hor.git"
   },
   "keywords": [
     "redux",
@@ -33,9 +33,9 @@
   "author": "Hovhannes Babayan <bhovhannes@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bhovhannes/redux-action-chain/issues"
+    "url": "https://github.com/bhovhannes/redux-action-chain-hor/issues"
   },
-  "homepage": "https://github.com/bhovhannes/redux-action-chain#readme",
+  "homepage": "https://github.com/bhovhannes/redux-action-chain-hor#readme",
   "devDependencies": {
     "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.5.0",

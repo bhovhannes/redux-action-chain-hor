@@ -4,18 +4,18 @@ export default {
   input: 'src/index.ts',
   output: [
     {
-      file: './dist/redux-action-chain.cjs.js',
+      file: './dist/redux-action-chain-hor.cjs.js',
       format: 'cjs',
       exports: 'named'
     },
     {
-      file: './dist/redux-action-chain.umd.js',
+      file: './dist/redux-action-chain-hor.umd.js',
       format: 'umd',
       name: 'ReduxActionChain',
       exports: 'named'
     },
     {
-      file: './dist/redux-action-chain.esm.js',
+      file: './dist/redux-action-chain-hor.esm.js',
       format: 'esm'
     }
   ],
