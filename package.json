@@ -1,6 +1,6 @@
 {
   "name": "redux-action-chain",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Higher-order reducer which makes possible dispatching an array of actions at once.",
   "main": "dist/redux-action-chain.cjs.js",
   "module": "dist/redux-action-chain.esm.js",
