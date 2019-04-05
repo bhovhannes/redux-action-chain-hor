@@ -1,4 +1,4 @@
-# redux-action-chain
+# redux-action-chain-hor
 
 Higher-order reducer which makes possible dispatching an array of actions at once.
 
@@ -44,4 +44,5 @@ dispatch(action2('foo', 123))
 dispatch(action3('boo'))
 ```
 
-components connected to Redux store will be updated 3 times - once after each `dispatch` call.
+components connected to Redux store will be notified 3 times - once after each `dispatch` call.  
+Depending on connected components that can have negative impact on performance.
