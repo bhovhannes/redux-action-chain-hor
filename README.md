@@ -13,7 +13,7 @@ It should be used like this:
 ```javascript
 // during store creation
 import { createStore } from 'redux'
-import { supportActionChain } from 'redux-action-chain'
+import { supportActionChain } from 'redux-action-chain-hor'
 
 const reducer = (state, action) => {
   // reducer code goes here
@@ -27,7 +27,7 @@ const store = createStore(
 
 // when dispatching multiple actions
 // use `actionChain` action creator
-import actionChain from 'redux-action-chain'
+import actionChain from 'redux-action-chain-hor'
 
 dispatch(actionChain([action1(), action2('foo', 123), action3('boo')]))
 ```
