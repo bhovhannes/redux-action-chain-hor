@@ -1,6 +1,6 @@
 # redux-action-chain-hor
 
-[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![Dependencies][deps-image]][deps-url] [![Dev. Dependencies][dev-deps-image]][dev-deps-url] [![MIT License][license-image]][license-url] [![Build Status][travis-image]][travis-url] [![Coverage][codecov-image]][codecov-url]
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![MIT License][license-image]][license-url] [![Coverage][codecov-image]][codecov-url]
 
 Higher-order reducer which makes possible dispatching an array of actions at once.
 
@@ -54,16 +54,10 @@ Depending on connected components that can have negative impact on performance.
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
 
-[deps-image]: https://img.shields.io/david/bhovhannes/redux-action-chain-hor.svg
-[deps-url]: https://david-dm.org/bhovhannes/redux-action-chain-hor
-[dev-deps-image]: https://img.shields.io/david/dev/bhovhannes/redux-action-chain-hor.svg
-[dev-deps-url]: https://david-dm.org/bhovhannes/redux-action-chain-hor#info=devDependencies
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 [npm-url]: https://www.npmjs.org/package/redux-action-chain-hor
 [npm-version-image]: https://img.shields.io/npm/v/redux-action-chain-hor.svg?style=flat
 [npm-downloads-image]: https://img.shields.io/npm/dm/redux-action-chain-hor.svg?style=flat
-[travis-url]: https://travis-ci.com/bhovhannes/redux-action-chain-hor
-[travis-image]: https://img.shields.io/travis/bhovhannes/redux-action-chain-hor.svg?style=flat
 [codecov-url]: https://codecov.io/gh/bhovhannes/redux-action-chain-hor
 [codecov-image]: https://img.shields.io/codecov/c/github/bhovhannes/redux-action-chain-hor.svg
