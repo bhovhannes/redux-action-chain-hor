@@ -10,6 +10,7 @@
   ],
   "types": "./typings/index.d.ts",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "run-p build:*",
     "build:bundles": "rollup --config rollup.config.js",
     "build:typings": "tsc --declaration --emitDeclarationOnly --noEmitOnError --declarationDir typings",
