@@ -1,7 +1,7 @@
 import { createStore } from 'redux'
 import actionChain, { supportActionChain } from './index'
 
-describe('action chain higher-order reducer', function() {
+describe('action chain higher-order reducer', function () {
   function reducer(state, action) {
     switch (action.type) {
       case 'INCREMENT':
@@ -17,11 +17,11 @@ describe('action chain higher-order reducer', function() {
   }
 
   let store
-  beforeEach(function() {
+  beforeEach(function () {
     store = createStore(supportActionChain(reducer))
   })
 
-  it('should execute all actions in a chain (1)', function() {
+  it('should execute all actions in a chain (1)', function () {
     store.dispatch(
       actionChain([
         {
@@ -37,7 +37,7 @@ describe('action chain higher-order reducer', function() {
     expect(store.getState()).toBe(30)
   })
 
-  it('should execute all actions in a chain (2)', function() {
+  it('should execute all actions in a chain (2)', function () {
     store.dispatch(
       actionChain([
         {
@@ -53,7 +53,7 @@ describe('action chain higher-order reducer', function() {
     expect(store.getState()).toBe(12)
   })
 
-  it('should notify subscribers only once', function() {
+  it('should notify subscribers only once', function () {
     const listener = jest.fn()
     store.subscribe(listener)
     store.dispatch(
@@ -71,7 +71,7 @@ describe('action chain higher-order reducer', function() {
     expect(listener).toHaveBeenCalledTimes(1)
   })
 
-  it('should accept a chain of single action', function() {
+  it('should accept a chain of single action', function () {
     store.dispatch(
       actionChain({
         type: 'INCREMENT',

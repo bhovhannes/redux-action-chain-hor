@@ -49,7 +49,6 @@ dispatch(action3('boo'))
 components connected to Redux store will be notified 3 times - once after each `dispatch` call.  
 Depending on connected components that can have negative impact on performance.
 
-
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
