@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/bhovhannes/redux-action-chain-hor#readme",
   "devDependencies": {
-    "@evilmartians/lefthook": "1.7.15",
+    "@evilmartians/lefthook": "1.7.17",
     "@bhovhannes/shared-config": "0.0.1",
     "@commitlint/cli": "19.5.0",
     "@rollup/plugin-typescript": "11.1.6",
