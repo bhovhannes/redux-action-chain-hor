@@ -44,7 +44,7 @@
     "@types/jest": "30.0.0",
     "jest": "30.5.2",
     "npm-run-all2": "9.0.4",
-    "prettier": "3.9.10",
+    "prettier": "3.10.1",
     "redux": "4.2.1",
     "rollup": "4.68.0",
     "ts-jest": "29.4.6",
